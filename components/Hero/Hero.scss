@@ -1,0 +1,52 @@
+section {
+  width: 100vw;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    h1 {
+      max-width: 600px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--main--blue);
+      animation: hero 3s forwards ease;
+      margin: 0;
+  
+      span {
+        &.pink {
+          color: var(--main--pink);
+        }
+      }
+
+      @keyframes hero {
+        from {
+          opacity: 0;
+          transform: translateY(5%);
+        }
+    
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    p {
+      margin: var(--spacer--secondary) 0 0 0;
+      font-weight: 100;
+      color: var(--main--grey);
+      text-align: center;
+    }
+  }
+}

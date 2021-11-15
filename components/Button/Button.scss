@@ -1,0 +1,42 @@
+.button-container {
+  width: 100%;
+  display: flex;
+
+
+  &.left {
+    justify-content: flex-start;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  a {
+    padding: 10px 20px 13px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    margin-top: var(--spacer--secondary);
+    width: fit-content;
+  
+    &.pink {
+      background: var(--main--pink);
+      color: white;
+  
+      &:hover {
+        background: var(--secondary--pink);
+        color: var(--main--pink);
+      }
+    }
+  
+    &.blue {
+      background: var(--main--blue);
+      color: white;
+  
+      &:hover {
+        background: var(--secondary--blue);
+        color: var(--main--blue);
+      }
+    }
+  }
+}
