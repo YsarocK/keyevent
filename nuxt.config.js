@@ -47,7 +47,5 @@ export default {
   build: {
   },
 
-  generate: {
-    dir: 'dist'
-  }
+  target: 'static'
 }
