@@ -3,6 +3,10 @@
 * {
   font-family: 'sofia-pro', sans-serif;
   box-sizing: border-box;
+
+  @media (min-width: 800px) {
+    grid-template-areas: ". .";
+  }
 }
 
 body,
@@ -36,7 +40,7 @@ section {
   padding: var(--spacer--main) var(--spacer--secondary);
 
   .container {
-    max-width: 1400px;
+    max-width: 1000px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +118,6 @@ section {
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
     gap: 0px 3rem; 
-    grid-template-areas: ". .";
 
     &__content {
       display: flex;

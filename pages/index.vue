@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero />
-    <section id="project" class="pres bg--pink text--left">
+    <section id="project" class="project pres bg--pink text--left">
       <div class="container">
         <div class="slider">
           <div class="half slider__content">
@@ -31,11 +31,13 @@
               <h2 class="blue">Accède simplement aux avantages des bars</h2>
               <p class="blue">Bois des coups au meilleur prix grâce au <span class="blue">des différents happy hour</span> et tarifs de nos bars partenaires. KeyEvent recense pour le moment <span class="blue">la majorité des bars Bordelais</span> et tant à s'étendre prochainement dans les plus grandes villes françaises.</p>
             </div>
-            <Button place="right" color="blue" value="Voir la liste des bars" />
+            <Button place="right" color="blue" value="Nos bars partenaires" />
           </div>
         </div>
       </div>
     </section>
+
+    <AboutUs />
   </div>
 </template>
 
